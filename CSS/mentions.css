@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "bounty-kid";
+    src: url(fonts/astronaut/ASTRONAU.TTF);
+}
+
+@font-face {
+    font-family: "comic-zine";
+    src: url(fonts/balls-on-the-rampage/BALLSONTHERAMPAGE.ttf);
+}
+
+body {
+    background: linear-gradient(to bottom, #405166 0%, #656f6f 100%);
+    user-select: none;
+}
+
+.texte p {
+    text-align: justify;
+    font-family: "bounty-kid";
+    font-size: 150%;
+}
+
+.texte h2 {
+    font-family: "comic-zine";
+    font-size: 200%;
+}
+
+.texte p a {
+    text-decoration: none;
+    border-bottom: dotted;
+    color: black;
+    transition: font-size 0.5s, color 0.5s;
+}
+
+.texte p a:hover {
+    color: thistle;
+    font-size: 105%;
+    transition: font-size 0.5s, color 0.5s;
+}
+
+footer .droits {
+    font-family: "comic-zine";
+    text-align: right;
+    margin-top: 5%;
+    font-size: 150%;
+}
+
+footer a {
+    position: absolute;
+    font-family: "comic-zine";
+    text-align: left;
+    margin-top: -3.9%;
+    font-size: 150%;
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+footer a:hover {
+    color: thistle;
+    font-size: 160%;
+    transition: color 0.5s, font-size 0.5s;
+}
