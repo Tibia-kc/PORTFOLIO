@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "twiddle";
+    src: url(fonts/twiddlestix/Twiddlestix.otf);
+}
+
+@font-face {
+    font-family: "barcode";
+    src: url(fonts/barcode-font/BarcodeFont.ttf)
+}
+
+@font-face {
+    font-family: "balls";
+    src: url(fonts/balls-on-the-rampage/BALLSONTHERAMPAGE.ttf);
+}
+
+html {
+    background: linear-gradient(to bottom, #405166 0%, #656f6f 100%);
+    overflow: hidden;
+    user-select: none;
+}
+
+
+/* BODY */
+
+.codage2 {
+    max-width: 13%;
+    left: 43%;
+    top: 13%;
+    position: relative;
+    z-index: 99;
+}
+
+.codage2:hover {
+    cursor: default;
+}
+
+body .texte {
+    font-size: 700%;
+    text-align: center;
+    margin-top: 10%;
+    font-family: "barcode", Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+
+#warped span {
+    font-family: "twiddle", Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+/* ANIM TEXTE CIRCU */
+
+
+/* FIN BODY */
+
+
+/* FOOTER */
+
+footer {
+    margin-top: -5%;
+}
+
+.droits {
+    font-family: "balls", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 79%;
+    cursor: default;
+}
+
+.mentions {
+    font-family: "balls", Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 150%;
+    display: flex;
+    text-decoration: none;
+    margin-left: 1%;
+    text-align: center;
+    color: black;
+    transition: font-size 0.5s;
+}
+
+.mentions:hover {
+    font-size: 175%;
+    transition: font-size 0.5s;
+}
+
+
+/* FIN FOOTER */
+
+.temp {
+    margin-top: -2.7%;
+}
+
+
+/* LOADER */
+
+
+/* FIN LOADER */

@@ -1,0 +1,740 @@
+@font-face {
+    font-family: "astro";
+    src: url(fonts/astronaut/ASTRONAU.TTF);
+}
+
+@font-face {
+    font-family: "lcd";
+    src: url(fonts/modern-lcd-7/modern_lcd-7.ttf);
+}
+
+@font-face {
+    font-family: "balls";
+    src: url(fonts/balls-on-the-rampage/BALLSONTHERAMPAGE.ttf);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    background: linear-gradient(to bottom, #405166 0%, #656f6f 100%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    user-select: none;
+    height: 280%;
+}
+
+p {
+    font-family: "balls", Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+
+h1 {
+    font-family: "lcd", Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    border-right: .13em solid thistle;
+    letter-spacing: .10em;
+    border-spacing: 1vh;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 150%;
+    font-weight: normal;
+    text-align: center;
+    line-height: 250%;
+    color: black;
+    animation: typ 5s steps(40, end), curseur .75s step-end infinite;
+}
+
+.back {
+    position: fixed;
+    border-radius: 100%;
+    border-style: dashed;
+    margin-left: 2.5vh;
+    margin-top: -4.5vh;
+    width: 7vh;
+    height: 7vh;
+    font-size: 4vh;
+    border-width: 3px;
+    border-color: black;
+    background-color: #405166;
+    transition: width 0.5s, height 0.5s, font-size 0.5s;
+    font-family: "lcd", Arial, Helvetica, sans-serif;
+}
+
+.back:hover {
+    cursor: pointer;
+    width: 7.5vh;
+    height: 7.5vh;
+    font-size: 4.5vh;
+    transition: width 0.5s, height 0.5s, font-size 0.5s;
+}
+
+.formation .it {
+    max-width: 30%;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8%;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.formation .it:hover {
+    transform: rotate(10deg);
+    transition: transform 0.5s;
+}
+
+.formation p {
+    font-size: 200%;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -6%;
+    opacity: 0;
+    color: thistle;
+    transform: translate(0px);
+    transition: opacity 0.7s, transform 0.7s;
+    z-index: 1;
+    cursor: default;
+}
+
+.formation .it:hover+p {
+    opacity: 1;
+    cursor: default;
+    transform: translate(-350px);
+    transition: opacity 0.7s, transform 0.7s;
+    cursor: default;
+}
+
+.entreprise .mdp {
+    position: relative;
+    display: block;
+    max-width: 14%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 9%;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.entreprise .mdp:hover {
+    transform: rotate(-10deg);
+    transition: transform 0.5s;
+}
+
+.entreprise p {
+    font-size: 200%;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -7%;
+    opacity: 0;
+    color: thistle;
+    transform: translate(0px);
+    transition: opacity 0.7s, transform 0.7s;
+    z-index: 1;
+    cursor: default;
+}
+
+.entreprise .mdp:hover+p {
+    opacity: 1;
+    cursor: default;
+    transform: translate(350px);
+    transition: opacity 0.7s, transform 0.7s;
+    cursor: default;
+}
+
+h3 {
+    font-family: "astro", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 250%;
+    font-weight: normal;
+    color: thistle;
+    margin-top: 7%;
+    cursor: default;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    z-index: 10;
+    cursor: default;
+}
+
+.python #pyt,
+.java #jav,
+.html #ht,
+.css #cs {
+    font-size: 400%;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+#pyt:hover,
+#jav:hover,
+#ht:hover,
+#cs:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+.icons p {
+    font-size: 300%;
+}
+
+.prc {
+    font-family: "astro", Arial, Helvetica, sans-serif;
+    font-size: 130%;
+}
+
+.python .pytext {
+    font-family: "balls", Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 250%;
+    margin-top: -4%;
+    opacity: 0;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.java .javtext {
+    position: absolute;
+    font-size: 250%;
+    margin-top: -3%;
+    opacity: 0;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.html .htext {
+    position: absolute;
+    font-size: 250%;
+    margin-top: -4%;
+    margin-left: 0.7%;
+    opacity: 0;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.css .csstext {
+    position: absolute;
+    font-size: 250%;
+    margin-top: -4%;
+    opacity: 0;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.python:hover .pytext {
+    opacity: 1;
+    transition: opacity 1s;
+    transform: translate(0, 70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.java:hover .javtext {
+    opacity: 1;
+    transition: opacity 1s;
+    transform: translate(0, 70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.html:hover .htext {
+    opacity: 1;
+    transition: opacity 1s;
+    transform: translate(0, 70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.css:hover .csstext {
+    opacity: 1;
+    transition: opacity 1s;
+    transform: translate(0, 70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.temp {
+    margin-top: 50%;
+}
+
+.python .descpy {
+    position: absolute;
+    color: thistle;
+    font-size: 250%;
+    margin-top: -3%;
+    margin-left: -1%;
+    opacity: 0;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    z-index: -1;
+    cursor: default;
+}
+
+
+/* ANIMATION TITRE(S) */
+
+@keyframes typ {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+
+/* --effet de curseur-- */
+
+@keyframes curseur {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: thistle;
+    }
+}
+
+
+/* ANIMATION DE MOUVEMENT ROTATIF */
+
+
+/* @keyframes rota{
+    from { transform: rotate(20deg); }
+    35%  { color:green; }
+    to   { color:red; }
+} */
+
+
+/* FIN ANIMATION DE MOUVEMENT ROTATIF */
+
+.java .descja {
+    position: absolute;
+    color: thistle;
+    font-size: 250%;
+    margin-top: -3%;
+    margin-left: -0.3%;
+    opacity: 0;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    z-index: -1;
+    cursor: default;
+}
+
+.html .deschtml {
+    position: absolute;
+    color: thistle;
+    font-size: 250%;
+    margin-top: -4%;
+    margin-left: 0.3%;
+    opacity: 0;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    z-index: -1;
+    cursor: default;
+}
+
+.css .descss {
+    position: absolute;
+    color: thistle;
+    font-size: 250%;
+    margin-top: -4%;
+    margin-left: 0.3%;
+    opacity: 0;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    z-index: -1;
+    cursor: default;
+}
+
+.python:hover .descpy {
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: -1;
+    transform: translate(0, -70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.java:hover .descja {
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: -1;
+    transform: translate(0, -70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.html:hover .deschtml {
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: -1;
+    transform: translate(0, -70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.css:hover .descss {
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: -1;
+    transform: translate(0, -70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.icons2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12%;
+    justify-content: space-between;
+    padding-left: 37%;
+    padding-right: 38%;
+    z-index: 10;
+    cursor: default;
+}
+
+.icons2 p {
+    font-size: 250%;
+}
+
+.php #ph,
+.js #jscript {
+    font-size: 400%;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+#ph:hover,
+#jscript:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+.php .descphp {
+    position: absolute;
+    color: thistle;
+    font-size: 250%;
+    margin-top: -4%;
+    margin-left: 01%;
+    opacity: 0;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    z-index: -1;
+    cursor: default;
+}
+
+.php:hover .descphp {
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: -1;
+    transform: translate(0, -70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.phtext {
+    position: absolute;
+    font-size: 250%;
+    margin-top: -4%;
+    margin-left: 1%;
+    opacity: 0;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.php:hover .phtext {
+    opacity: 1;
+    transition: opacity 1s;
+    transform: translate(0, 70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.js .descjs {
+    position: absolute;
+    color: thistle;
+    font-size: 250%;
+    margin-top: -4%;
+    margin-left: 0.7%;
+    opacity: 0;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    z-index: -1;
+    cursor: default;
+}
+
+.js:hover .descjs {
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: -1;
+    transform: translate(0, -70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.jstext {
+    position: absolute;
+    margin-top: -4%;
+    opacity: 0;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.js:hover .jstext {
+    opacity: 1;
+    transition: opacity 1s;
+    transform: translate(0, 70px);
+    transition: opacity 1s, transform 1s;
+    cursor: default;
+}
+
+.competenceapp p {
+    font-size: 250%;
+}
+
+.competenceapp .phpmyadmin {
+    max-width: 08%;
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 7%;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+.competenceapp .phpmyadmin:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+.descpma {
+    position: absolute;
+    color: thistle;
+    opacity: 0;
+    font-size: 200%;
+    margin-left: 43.5%;
+    margin-top: -5%;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.phpmyadmin:hover+.descpma {
+    opacity: 1;
+    transform: translate(0, -90px);
+    transition: opacity 1.5s, transform 1s;
+}
+
+.pmatext {
+    position: absolute;
+    opacity: 0;
+    font-size: 200%;
+    margin-left: 47.5%;
+    margin-top: -5%;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.phpmyadmin:hover~.pmatext {
+    opacity: 1;
+    transform: translate(0, 90px);
+    transition: opacity 1.5s, transform 1s;
+}
+
+.visual .vscode {
+    max-width: 25%;
+    margin-left: -1.5%;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+.vscode:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+.intellij .intj {
+    max-width: 13%;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+.intj:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+.editeurs {
+    display: flex;
+    margin-top: 7%;
+    justify-content: space-between;
+    padding-left: 36%;
+    z-index: 10;
+    cursor: default;
+}
+
+.descvisual {
+    position: absolute;
+    color: thistle;
+    opacity: 0;
+    font-size: 250%;
+    margin-left: -5.3%;
+    margin-top: -4%;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.vscode:hover~.descvisual {
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    transform: translate(0, -70px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.visutext {
+    position: absolute;
+    opacity: 0;
+    font-size: 250%;
+    margin-left: 1.5%;
+    margin-top: -4%;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.vscode:hover~.visutext {
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    transform: translate(70px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.visutext2 {
+    position: absolute;
+    opacity: 0;
+    font-size: 250%;
+    margin-left: -1.5%;
+    margin-top: -4%;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.vscode:hover~.visutext2 {
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    transform: translate(-100px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.visutext3 {
+    position: absolute;
+    opacity: 0;
+    font-size: 250%;
+    margin-left: 0.7%;
+    margin-top: -4%;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.vscode:hover~.visutext3 {
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    transform: translate(0, 60px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.descint {
+    position: absolute;
+    color: thistle;
+    opacity: 0;
+    font-size: 250%;
+    margin-left: -1.2%;
+    margin-top: -4%;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.intj:hover~.descint {
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    transform: translate(0, -70px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.intext {
+    position: absolute;
+    opacity: 0;
+    font-size: 250%;
+    margin-left: 0.5%;
+    margin-top: -4%;
+    z-index: -1;
+    transform: translate(0, 0px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+.intj:hover~.intext {
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    transform: translate(0, 70px);
+    transition: opacity 0.7s, transform 1s;
+    cursor: default;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
