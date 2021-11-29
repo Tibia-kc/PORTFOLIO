@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PORTFOLIO LEO GANDON</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/bouton.css" />
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=ABeeZee:regular:latin'>
+    <!-- Style Texte circu -->
+    <style type='text/css'>
+        #warped {
+            position: absolute;
+            display: block;
+            width: 588px;
+            height: 440px;
+            margin-top: -58%;
+            margin-left: 30.5%;
+            transform: rotate(10deg);
+        }
+        
+        #warped>span[class^=w]:nth-of-type(n+0) {
+            display: block;
+            position: absolute;
+            -moz-transform-origin: 50% 100%;
+            -webkit-transform-origin: 50% 100%;
+            -o-transform-origin: 50% 100%;
+            -ms-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+        }
+        
+        #warped span {
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 7px;
+            line-height: 0.65;
+            white-space: pre;
+            overflow: visible;
+            padding: 0px;
+        }
+        
+        #warped .w0 {
+            -moz-transform: rotate(4.78rad);
+            -webkit-transform: rotate(4.78rad);
+            -o-transform: rotate(4.78rad);
+            -ms-transform: rotate(4.78rad);
+            transform: rotate(4.78rad);
+            width: 19px;
+            height: 24px;
+            left: 197.71px;
+            top: 189.82px;
+            animation-delay: 0s;
+        }
+        
+        #warped .w1 {
+            -moz-transform: rotate(5.07rad);
+            -webkit-transform: rotate(5.07rad);
+            -o-transform: rotate(5.07rad);
+            -ms-transform: rotate(5.07rad);
+            transform: rotate(5.07rad);
+            width: 21px;
+            height: 24px;
+            left: 202.02px;
+            top: 165.48px;
+            animation-delay: 0.1s;
+        }
+        
+        #warped .w2 {
+            -moz-transform: rotate(5.37rad);
+            -webkit-transform: rotate(5.37rad);
+            -o-transform: rotate(5.37rad);
+            -ms-transform: rotate(5.37rad);
+            transform: rotate(5.37rad);
+            width: 22px;
+            height: 24px;
+            left: 214.43px;
+            top: 142.45px;
+            animation-delay: 0.15s;
+        }
+        
+        #warped .w3 {
+            -moz-transform: rotate(5.62rad);
+            -webkit-transform: rotate(5.62rad);
+            -o-transform: rotate(5.62rad);
+            -ms-transform: rotate(5.62rad);
+            transform: rotate(5.62rad);
+            width: 11px;
+            height: 24px;
+            left: 235.11px;
+            top: 127.3px;
+            animation-delay: 0.2s;
+        }
+        
+        #warped .w4 {
+            -moz-transform: rotate(5.89rad);
+            -webkit-transform: rotate(5.89rad);
+            -o-transform: rotate(5.89rad);
+            -ms-transform: rotate(5.89rad);
+            transform: rotate(5.89rad);
+            width: 26px;
+            height: 24px;
+            left: 247.87px;
+            top: 115.55px;
+            animation-delay: 0.25s;
+        }
+        
+        #warped .w5 {
+            -moz-transform: rotate(6.24rad);
+            -webkit-transform: rotate(6.24rad);
+            -o-transform: rotate(6.24rad);
+            -ms-transform: rotate(6.24rad);
+            transform: rotate(6.24rad);
+            width: 26px;
+            height: 24px;
+            left: 278.02px;
+            top: 109.05px;
+            animation-delay: 0.3s;
+        }
+        
+        #warped .w6 {
+            -moz-transform: rotate(6.61rad);
+            -webkit-transform: rotate(6.61rad);
+            -o-transform: rotate(6.61rad);
+            -ms-transform: rotate(6.61rad);
+            transform: rotate(6.61rad);
+            width: 27px;
+            height: 24px;
+            left: 308.51px;
+            top: 113.63px;
+            animation-delay: 0.35s;
+        }
+        
+        #warped .w7 {
+            -moz-transform: rotate(6.97rad);
+            -webkit-transform: rotate(6.97rad);
+            -o-transform: rotate(6.97rad);
+            -ms-transform: rotate(6.97rad);
+            transform: rotate(6.97rad);
+            width: 26px;
+            height: 24px;
+            left: 336.37px;
+            top: 128.89px;
+            animation-delay: 0.4s;
+        }
+        
+        #warped .w8 {
+            -moz-transform: rotate(7.34rad);
+            -webkit-transform: rotate(7.34rad);
+            -o-transform: rotate(7.34rad);
+            -ms-transform: rotate(7.34rad);
+            transform: rotate(7.34rad);
+            width: 29px;
+            height: 24px;
+            left: 355.54px;
+            top: 153.73px;
+            animation-delay: 0.45s;
+        }
+        
+        #warped .w9 {
+            -moz-transform: rotate(7.72rad);
+            -webkit-transform: rotate(7.72rad);
+            -o-transform: rotate(7.72rad);
+            -ms-transform: rotate(7.72rad);
+            transform: rotate(7.72rad);
+            width: 27px;
+            height: 24px;
+            left: 366.78px;
+            top: 184.89px;
+            animation-delay: 0.50s;
+        }
+        
+        .codage2:hover~#warped span {
+            opacity: 1;
+            transition: opacity 3s;
+            transition-delay: 0.4s
+        }
+        
+        #warped {
+            transform: rotate(0deg);
+            transition: 1.5s;
+        }
+        
+        .codage2:hover~#warped {
+            transform: rotate(375deg);
+            transition: transform 1.5s;
+        }
+    </style>
+    <!--Fin style Texte circu -->
+</head>
+
+<body style="height: 100vh;">
+    <img class="codage2" src="images/codage2.png" />
+
+    <div class="texte">
+        <p>
+            Bienvenue dans mon Portfolio !
+        </p>
+    </div>
+
+    <!-- BOUTON -->
+    <div class="buttons">
+        <button class="blob-btn" onclick="window.location.href = 'p2.html';">
+                ENTRER
+                <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                    </span>
+                </span>
+            </button>
+        <br/>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                </filter>
+            </defs>
+            </svg>
+    </div>
+    <!-- FIN BOUTON -->
+
+    <!-- TEXTE CIRCU -->
+    <div id='warped'>
+        <span class='w0'>L</span><span class='w1'>é</span><span class='w2'>o</span><span class='w3'> </span><span class='w4'>G</span><span class='w5'>A</span><span class='w6'>N</span><span class='w7'>D</span><span class='w8'>O</span><span class='w9'>N</span>
+    </div>
+    <!-- FIN TEXTE CIRCU-->
+
+</body>
+
+<!-- LOADER -->
+<!-- LOADER -->
+
+<footer>
+    <a href="mentionslegales.html" class="mentions">Mentions legales</a>
+    <p class="droits">Leo GANDON, tous droits reserves.</p>
+</footer>
+
+</html>
