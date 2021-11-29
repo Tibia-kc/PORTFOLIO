@@ -9,32 +9,40 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #405166 0%, #656f6f 100%);
+    background: #323641;
     user-select: none;
+}
+
+footer {
+    color: #c2c2d6;
+    font-size: 125%;
 }
 
 .texte p {
     text-align: justify;
     font-family: "bounty-kid";
     font-size: 150%;
+    color: #c2c2d6;
 }
 
 .texte h2 {
     font-family: "comic-zine";
-    font-size: 200%;
+    font-size: 250%;
+    font-weight: normal;
+    letter-spacing: .10em;
+    color: #ffcc00;
 }
 
 .texte p a {
     text-decoration: none;
     border-bottom: dotted;
-    color: black;
+    color: #ffcc00;
     transition: font-size 0.5s, color 0.5s;
 }
 
 .texte p a:hover {
     color: thistle;
-    font-size: 105%;
-    transition: font-size 0.5s, color 0.5s;
+    transition: transform 0.5s, color 0.5s;
 }
 
 footer .droits {
@@ -51,7 +59,7 @@ footer a {
     margin-top: -3.9%;
     font-size: 150%;
     text-decoration: none;
-    color: black;
+    color: #c2c2d6;
     transition: color 0.5s, font-size 0.5s;
 }
 
