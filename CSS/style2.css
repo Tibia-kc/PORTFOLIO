@@ -301,23 +301,24 @@ body {
     position: fixed;
     border-radius: 100%;
     border-style: dashed;
-    margin-left: -187vh;
-    margin-top: -84vh;
+    z-index: 10;
+    top: 05%;
+    left: 1%;
     width: 7vh;
     height: 7vh;
     font-size: 4vh;
     border-width: 3px;
     border-color: black;
     background-color: #ffcc00;
+    font-family: "lcd", Arial, Helvetica, sans-serif;
     transform: scale(100%);
     transition: transform 0.5s;
-    font-family: "lcd", Arial, Helvetica, sans-serif;
-    z-index: 10;
 }
 
 .back:hover {
     cursor: pointer;
-    transform: scale(110%);
+    transform: scale(115%);
+    transition: transform 0.5s;
 }
 
 

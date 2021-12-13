@@ -13,7 +13,11 @@
 }
 
 .buttons {
-    margin-top: 50px;
+    position: absolute;
+    top: 65vh;
+    left: 50vh;
+    right: 50vh;
+    padding-top: 2rem;
     text-align: center;
     border-radius: 30px;
     font-family: "twiddle", Arial, Helvetica, sans-serif;

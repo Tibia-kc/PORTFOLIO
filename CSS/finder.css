@@ -1,0 +1,207 @@
+/* Idée : faire un scale X sur les blocs pour une brève decription du projet après un clic, puis proposer un bouton pour approf */
+
+
+/* IMPORT DES POLICES */
+
+@font-face {
+    font-family: "astro";
+    src: url(fonts/astronaut/ASTRONAU.TTF);
+}
+
+@font-face {
+    font-family: "lcd";
+    src: url(fonts/modern-lcd-7/modern_lcd-7.ttf);
+}
+
+@font-face {
+    font-family: "balls";
+    src: url(fonts/balls-on-the-rampage/BALLSONTHERAMPAGE.ttf);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    background: #323641;
+    background-repeat: no-repeat;
+    background-size: auto;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+
+/* TITRE */
+
+.titre {
+    font-size: 200%;
+    font-family: "lcd", Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    margin-left: 45%;
+    margin-right: 47%;
+    color: #c2c2d6;
+    margin-top: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    letter-spacing: .15em;
+    border-right: .13em solid thistle;
+    animation: typ 2s steps(15, end), curseur .75s step-end infinite;
+}
+
+.desczoo {
+    position: relative;
+    text-align: center;
+    top: 5vh;
+    font-family: "astro", Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+
+.desczoo a {
+    color: #ffcc00;
+    transition: color 0.6s;
+}
+
+.desczoo a:hover {
+    color: #c2c2d6;
+    transition: color 0.6s;
+}
+
+#freb {
+    text-decoration: none;
+    color: #c2c2d6;
+    transition: color 0.6s;
+}
+
+#freb:hover {
+    color: #ffcc00;
+    transition: color 0.6s;
+}
+
+.desczoo2 {
+    position: relative;
+    text-align: center;
+    top: 05vh;
+    font-family: "astro", Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+
+.easylogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13vh;
+    width: 25vh;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+.easylogo:active {
+    transform: rotate(360deg);
+    transition: transform 5s;
+}
+
+.desczoo1 {
+    position: relative;
+    text-align: center;
+    top: 4vh;
+    font-family: "astro", Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+
+.desczoo1 a {
+    color: #ffcc00;
+    transition: color 0.6s;
+}
+
+.desczoo1 a:hover {
+    color: #c2c2d6;
+    transition: color 0.6s;
+}
+
+#grey {
+    color: #c2c2d6;
+}
+
+#yellow {
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+#yellow:hover+#next {
+    color: #c2c2d6;
+    transition: color 0.5s;
+}
+
+#next {
+    transition: color 0.5s;
+}
+
+.codepen {
+    margin-top: 20vh;
+}
+
+.desczoo1 a {
+    color: #ffcc00;
+    transition: color 0.6s;
+}
+
+.desczoo1 a:hover {
+    color: #c2c2d6;
+    transition: color 0.6s;
+}
+
+
+/* BOUTON RETOUR */
+
+.back {
+    position: fixed;
+    border-radius: 100%;
+    border-style: dashed;
+    z-index: 10;
+    top: 05%;
+    left: 1%;
+    width: 7vh;
+    height: 7vh;
+    font-size: 4vh;
+    border-width: 3px;
+    border-color: black;
+    background-color: #ffcc00;
+    font-family: "lcd", Arial, Helvetica, sans-serif;
+    transform: scale(100%);
+    transition: transform 0.5s;
+}
+
+.back:hover {
+    cursor: pointer;
+    transform: scale(115%);
+    transition: transform 0.5s;
+}
+
+.temp {
+    position: relative;
+    top: 10%;
+}
+
+@keyframes typ {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 7%;
+    }
+}
+
+
+/* --effet de curseur-- */
+
+@keyframes curseur {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: thistle;
+    }
+}

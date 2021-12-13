@@ -1,0 +1,259 @@
+/* Idée : faire un scale X sur les blocs pour une brève decription du projet après un clic, puis proposer un bouton pour approf */
+
+
+/* IMPORT DES POLICES */
+
+@font-face {
+    font-family: "astro";
+    src: url(fonts/astronaut/ASTRONAU.TTF);
+}
+
+@font-face {
+    font-family: "lcd";
+    src: url(fonts/modern-lcd-7/modern_lcd-7.ttf);
+}
+
+@font-face {
+    font-family: "balls";
+    src: url(fonts/balls-on-the-rampage/BALLSONTHERAMPAGE.ttf);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    background: #323641;
+    background-repeat: no-repeat;
+    background-size: auto;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.tout {
+    transform: translate(0);
+    transition: transform 1s;
+}
+
+.me {
+    position: absolute;
+    margin-left: 220vh;
+    transform: translate(0vh);
+    transition: transform 1s;
+    margin-top: -10%;
+}
+
+
+/* TITRE */
+
+.titre {
+    font-size: 200%;
+    position: absolute;
+    font-family: "lcd", Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    margin-left: 36%;
+    margin-right: 34%;
+    color: #c2c2d6;
+    margin-top: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    letter-spacing: .15em;
+    border-right: .13em solid thistle;
+    animation: typ 3s steps(22, end), curseur .75s step-end infinite;
+}
+
+
+/* BOUTON RETOUR */
+
+.back {
+    position: fixed;
+    border-radius: 100%;
+    border-style: dashed;
+    z-index: 10;
+    top: 05%;
+    left: 1%;
+    width: 7vh;
+    height: 7vh;
+    font-size: 4vh;
+    border-width: 3px;
+    border-color: black;
+    background-color: #ffcc00;
+    font-family: "lcd", Arial, Helvetica, sans-serif;
+    transform: scale(100%);
+    transition: transform 0.5s;
+}
+
+.back:hover {
+    cursor: pointer;
+    transform: scale(115%);
+    transition: transform 0.5s;
+}
+
+.descec {
+    position: relative;
+    text-align: center;
+    top: 19vh;
+    font-family: "astro", Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+
+
+/* PROJETS */
+
+
+/* Zoo */
+
+.projets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.auto h3 {
+    font-family: "lcd";
+    font-weight: normal;
+    font-size: 150%;
+    line-height: 45px;
+}
+
+.auto {
+    border: solid thistle 2px;
+    display: block;
+    border-radius: 30px;
+    width: 23%;
+    text-align: center;
+    background-color: #ffcc00;
+    margin-top: 10%;
+    margin-left: 5%;
+    transform: scale(100%);
+    transition: transform 0.5s;
+}
+
+.auto:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: transform 0.5s;
+}
+
+.imgauto {
+    padding-top: -50px;
+    border-radius: 20px;
+    z-index: 2;
+    max-width: 60%;
+    line-height: 45px;
+}
+
+.descauto {
+    font-family: "astro", Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+
+/* Easy */
+
+.script h3 {
+    font-family: "lcd";
+    font-weight: normal;
+    font-size: 150%;
+    line-height: 45px;
+}
+
+.script {
+    border: solid thistle 2px;
+    display: block;
+    border-radius: 30px;
+    width: 23%;
+    text-align: center;
+    background-color: #ffcc00;
+    margin-top: 10%;
+    margin-left: 5%;
+    transform: scale(100%);
+    transition: transform 0.5s;
+}
+
+.script:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: transform 0.5s;
+}
+
+.imgscript {
+    max-width: 50%;
+    padding-top: -50px;
+    z-index: 2;
+}
+
+.descscript {
+    font-family: "astro", Arial, Helvetica, sans-serif;
+    bottom: 1px;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+
+/* SQL */
+
+.sql h3 {
+    font-family: "lcd";
+    font-weight: normal;
+    font-size: 150%;
+    line-height: 45px;
+}
+
+.sql {
+    border: solid thistle 2px;
+    display: block;
+    border-radius: 30px;
+    width: 23%;
+    text-align: center;
+    background-color: #ffcc00;
+    margin-top: 10%;
+    margin-left: 5%;
+    transform: scale(100%);
+    transition: transform 0.5s;
+}
+
+.sql:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: transform 0.5s;
+}
+
+.imgsql {
+    max-width: 60%;
+    padding-top: -50px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.descsql {
+    font-family: "astro", Arial, Helvetica, sans-serif;
+    bottom: 1px;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+@keyframes typ {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+
+/* --effet de curseur-- */
+
+@keyframes curseur {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: thistle;
+    }
+}
