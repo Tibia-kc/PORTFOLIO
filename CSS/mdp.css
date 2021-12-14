@@ -38,7 +38,7 @@ html {
     margin-left: 220vh;
     transform: translate(0vh);
     transition: transform 1s;
-    margin-top: -10%;
+    margin-top: -35vw;
 }
 
 .job,
@@ -103,7 +103,7 @@ html {
     font-size: 200%;
     font-family: "lcd", Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    margin-left: 33%;
+    margin-left: 40%;
     margin-right: 41%;
     color: #c2c2d6;
     margin-top: 5%;
@@ -138,7 +138,7 @@ html {
 
 .logo img {
     max-width: 20%;
-    margin-left: 177%;
+    margin-left: 10%;
 }
 
 .logo img:hover {
@@ -152,13 +152,22 @@ html {
 /* LOGOS + TXT */
 
 .icons {
-    margin-top: 05%;
+    margin-top: 08%;
+    margin-left: 06vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: -500px;
 }
 
 i {
     color: #ffcc00;
     transform: scale(100%);
     transition: transform 0.5s;
+    text-align: center;
+    margin-top: 6vw;
 }
 
 i:hover {
@@ -166,32 +175,27 @@ i:hover {
     transition: transform 0.5s;
 }
 
-.loca .ville {
+.ville {
     font-family: "astro", Arial, Helvetica, sans-serif;
-    position: absolute;
+    position: absolute; 
     margin-left: 20%;
+    text-align: center;
 }
 
 .loca {
     font-family: "balls", Arial, Helvetica, sans-serif;
     position: absolute;
     margin-top: 16%;
-    margin-left: 8.8%;
+    margin-left: 6%;
     font-size: 2em;
     color: #c2c2d6;
 }
 
 #build {
-    position: absolute;
-    margin-top: 20vh;
-    margin-left: 2.5em;
     font-size: 4.7em;
 }
 
 #doc {
-    position: absolute;
-    margin-top: 20vh;
-    margin-left: 8.25em;
     font-size: 4.7em;
 }
 
@@ -212,9 +216,6 @@ i:hover {
 }
 
 #sign {
-    position: absolute;
-    margin-top: 20vh;
-    margin-left: 13.8em;
     font-size: 4.7em;
 }
 
@@ -234,9 +235,6 @@ i:hover {
 }
 
 #mallet {
-    position: absolute;
-    margin-top: 20vh;
-    margin-left: 19.5em;
     font-size: 4.7em;
 }
 
